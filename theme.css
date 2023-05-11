@@ -1,0 +1,101 @@
+html {
+    background-color: rgb(14, 23, 47);
+    overflow-x: hidden;
+}
+
+:root {
+    --main-text1:rgb(62, 62, 62);
+    --main-text2:rgb(24, 24, 24);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: 
+    linear-gradient(to bottom, rgb(255, 255, 255), rgb(231, 235, 241));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: Open Sans, Arial;
+}
+/*navigation bar*/
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    padding:12px 0px 12px 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.icon-menu {
+    display: none;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    min-width: 420px;
+}
+@media (max-width:900px) {
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        right: 16px;
+        min-width: 100px;
+        height: 240px;
+        margin-right: 0;
+        padding: 16px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        Backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 16px;
+        flex-direction: column;
+        z-index: 200;
+
+        transform: translateX(120%);
+        transition: transform 0.2s ease-in;
+    }
+    .nav-menu[data-open="true"] {
+        transform: translateX(0%);
+    }
+    .icon-menu {
+        position: absolute;
+        right:16px ;
+        display: block;
+        width: 24px;
+        z-index: 300;
+    }
+}
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.nav-menu a:hover,
+.nav-menu a.active 
+{
+    background-color: white;
+    color:rgb(5, 8, 30) ;
+    font-weight: 400;
+}
+.nav-menu a:hover {
+    box-shadow:2px 2px 18px rgba(255, 255, 255, 0.5),
+                -2px -2px 18px rgba(255, 255, 255, 0.5) ;
+}
+.nav-logo p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    color: white;
+
+}
