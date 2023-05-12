@@ -50,7 +50,7 @@ const projectContainer = document.querySelector(".projects");
 const projectcard = document.querySelector(".project");
 
 let currentPosition = 0;
-let scrollAmount = projectcard.offsetWidth * 1.1;
+let scrollAmount = projectcard.offsetWidth + 32;
 
   function projectScroll(val) {
   currentPosition += (val * scrollAmount);
