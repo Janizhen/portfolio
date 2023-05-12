@@ -1,19 +1,18 @@
 /*background-base-color*/
 html {
-    background-color: rgb(11, 13, 30);
+    background-color: rgb(2, 6, 29);
     overflow-x: hidden;
 }
 :root {
-    --background-lightblue:rgba(54, 61, 86, 0.6);
+    --background-lightblue:rgba(35, 41, 64, 0.6);
     --background-transparent:rgba(54, 61, 86, 0.1);
-    --backgroud-border:rgba(173, 216, 230, 0.5);
+    --backgroud-border:rgba(173, 205, 230, 0.4);
 }
 body {
     margin: 0;
     padding: 0;
     background: 
-    url(landscape/texture.PNG) center center / cover no-repeat,
-    linear-gradient(to bottom, rgb(22, 27, 39), rgb(11, 13, 30));
+    linear-gradient(to bottom, rgb(13, 19, 36), rgb(2, 6, 29));
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
