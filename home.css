@@ -6,7 +6,7 @@ html {
 :root {
     --background-lightblue:rgba(35, 41, 64, 0.6);
     --background-transparent:rgba(54, 61, 86, 0.1);
-    --backgroud-border:rgba(173, 205, 230, 0.4);
+    --backgroud-border:rgba(173, 205, 230, 0.3);
 }
 body {
     margin: 0;
