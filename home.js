@@ -44,11 +44,13 @@ window.addEventListener('load', () => {
 });
 
 //projects-scroller//
-let currentPosition = 0;
-let scrollAmount = 320;
 
 const projectArray = document.querySelector(".project-array");
 const projectContainer = document.querySelector(".projects");
+const projectcard = document.querySelector(".project");
+
+let currentPosition = 0;
+let scrollAmount = projectcard.offsetWidth * 1.1;
 
   function projectScroll(val) {
   currentPosition += (val * scrollAmount);
