@@ -128,7 +128,7 @@ nav {
 @media (max-width:30rem) {
     #title {
         width: 80%;
-        top: 30%;
+        top: 35%;
         transform: translate(-50%, 0);
     }
 }
@@ -513,6 +513,7 @@ nav {
     display: flex;
     flex-direction: column;
     color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
     overflow-wrap: break-word;
     background-color: var(--background-transparent);
     border-radius: 1rem;
