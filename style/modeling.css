@@ -71,3 +71,20 @@ img {
     justify-content: center;
     align-items: center;
 }
+@media (max-width:45rem) {
+    .ThreeD-title {
+        grid-template-columns: 1fr;
+    }
+    .process1-grid {
+        grid-template-columns: 1fr;
+    }
+    .process2-grid {
+        grid-template-columns: 1fr;
+    }
+    .process4-grid {
+        grid-template-columns: 1fr;
+    }
+    .process5-grid {
+        grid-template-columns: 1fr;
+    }
+}
