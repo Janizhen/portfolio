@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/home.css">
+</head>
+
+<body>
+<!--navigation-->
+    <nav>
+        <div class="nav-logo">
+            <p>Portfolio.</p>
+        </div>
+        <div class="nav-menu" id="navMenu" data-open="false">
+            <a href="index.html" id="home">Home</a>
+            <a href="projects.html" id="portfolio">Projects</a>
+            <a href="about.html" id="about">About</a>
+            <a href="contact.html" id="contact">Contact</a>
+        </div>
+        <img class="icon-menu" id="menuToggle" src="icon-skill/menu.png">
+    </nav>
+<!--Big Title-->
+    <div id="title">
+        <!--Photo-->
+        <div class="title-photo">
+            <div class="circle">
+                <img src="landscape/photo.png" class="photo">
+            </div>
+        </div>
+        <!--Text-->
+        <div class="title-text">
+            <h2 class="title-text-1">
+                <img class="butterfly" src="landscape/butterfly2.PNG">
+                <img class="butterfly" src="landscape/butterfly1.PNG">
+                <img src="landscape/butterfly3.PNG">
+                Hi, I'm <span class="name">Zhen Qiao.</span>
+            </h2>
+            <div>
+                <p class="title-text-2">
+                    &lt; I am an enthusiastic UI/UX designer and web developer._ &gt;
+                </p>
+            </div>
+        </div>
+        <!--Scroll-->
+        <div class="scroll">
+            <img src="landscape/scroll-arrow.png">
+        </div>
+    </div>
+
+<!--Parallex Scrolling Effect Background-->
+    <section class="landscape">
+        <img id="b-l" src="landscape/Back-left.PNG">
+        <img id="b-r" src="landscape/Back-right.PNG">
+        <img id="f-l" src="landscape/Front-left.PNG">
+        <img id="f-r" src="landscape/Front-right.PNG">
+        <img id="star" src="landscape/glitter.PNG">
+    </section>
+
+<!--Section-Skills-->
+    <section class="sec-1">
+        <h3>&lt; Skills &gt;</h3>
+        <!--Flex-Skills-->
+        <div class="skill-set">
+            <!--Skill-1-->
+            <div class="skill">
+                <h4>
+                    Design
+                </h4>
+                <p>
+                    <span class="high-light-1">Graphic design:</span> grid system, layout structure, color (saturation, value, contrast, color harmony) and 3D modelling; <br>
+                </p>
+                <div class="container-icon">
+                    <div class="container-icon-small">
+                        <img src="icon-skill/blender.png">
+                        <p class="subtitle">Blender</p>
+                    </div>
+                    <div class="container-icon-small">
+                        <img src="icon-skill/ps.png">
+                        <p class="subtitle">Photoshop</p>
+                    </div>
+                    <div class="container-icon-small">
+                        <img src="icon-skill/ai.png">
+                        <p class="subtitle">Adobe Illustrator</p>
+                    </div>
+                    <div class="container-icon-small">
+                        <img src="icon-skill/procreate.png">
+                        <p class="subtitle">Procreate</p>
+                    </div>
+                </div>
+            </div>
+            <!--Skill-2-->
+            <div class="skill">
+                <h4>UI/UX
+                </h4>
+                <p>
+                    <span class="high-light-1">UX/UI design:</span> UX research, user stories, wireframes and prototypes; <br>
+                    <span class="high-light-1">Design system:</span> typography, visual hierarchy, contrast and readability, 4pt /8pt grid system and responsive design;
+                    <br><span class="high-light-1">Figma:</span> components and variants.
+                </p>
+                <div class="container-icon">
+                    <div class="container-icon-small">
+                        <img src="icon-skill/figma.png">
+                        <p class="subtitle">Figma</p>
+                    </div>
+                </div>
+            </div>
+            <!--Skill-3-->
+            <div class="skill">
+                <h4>
+                    Web development
+                </h4>
+                <p>
+                    <span class="high-light-1">HTML & CSS:</span> flex-box, grid-system, responsive design etc.;<br>
+                    <span class="high-light-1">Javascript:</span> functions, loops, arrays, objects, DOM.
+                </p>
+                <div class="container-icon">
+                    <div class="container-icon-small">
+                        <img src="icon-skill/html.png">
+                        <p class="subtitle">Html</p>
+                    </div>
+                    <div class="container-icon-small">
+                        <img src="icon-skill/css.png">
+                        <p class="subtitle">CSS</p>
+                    </div>
+                    <div class="container-icon-small">
+                        <img src="icon-skill/javascript.png">
+                        <p class="subtitle">Java Script</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Download Resume-->
+        <div class="resume-container">
+            <div class="resume-flex">
+                <div class="resume-img-text">
+                    <img src="icon-skill/download.png">
+                     Resume :
+                </div>
+                <div>
+                    <a class="see-resume" href="CV/Resume-EN.pdf">
+                        <button>
+                            EN
+                        </button>
+                    </a>
+                    <a class="see-resume" href="CV/Resume-DE.pdf">
+                        <button>
+                            DE
+                        </button>
+                    </a>
+                    <a class="see-resume" href="CV/Resume-CH.pdf">
+                        <button>
+                            CH
+                        </button>
+                    </a>
+                </div>
+        </div>
+        </div>
+    </section>
+
+<!--Section-Projects-->
+    <section class="sec-2">
+        <h3>&lt; Projects &gt;</h3>
+        <img class="left-arrow" src="landscape/left-arrow copy.png" onclick="projectScroll(1)">
+        <img class="right-arrow" src="landscape/right-arrow.png" onclick="projectScroll(-1)">
+        <!--Container-Project-->
+        <div class="projects">
+            <!--The row of projects-->
+            <div class="project-array">
+                <!--Project1-->
+                <div class="project">
+                    <div class="project-img-container">
+                        <img src="case-clubhouse/project-1.png">
+                    </div>
+                    <h4>Clubhouse UX redesign</h4>
+                    <p>
+                        Clubhouse is is a social network app based on voice. The objective of this case study is to address the app's UX problem of users being unable to locate the ideal content within the app.
+                    </p>
+                    <a href="clubhouse.html">
+                        <button class="project-button">Learn more</button>
+                    </a>
+                </div>
+                <!--Project2-->
+                <div class="project">
+                    <div class="project-img-container">
+                        <img src="website/cover.png">
+                    </div>
+                    <h4>The portfolio website</h4>
+                    <p>
+                        I coded this whole portfolio website.<br>
+                        <br>
+                        Skills included in this project: <br>
+                        Html; CSS; Java script.
+                    </p>
+                    <a href="" class="info-github">
+                        <img src="icon-skill/github.png">
+                        <button class="project-button">
+                            View code
+                        </button>
+                    </a>
+                </div>
+                <!--Project3-->
+                <div class="project">
+                    <div class="project-img-container">
+                        <img src="3Dmodeling/complete2.png">
+                    </div>
+                    <h4>3D-modeling (for this portfolio)</h4>
+                    <p>
+                        I made this portfolio website from scratch, including the background picture (the house, the clouds and the little cat)! You may click here and see my modeling process. <br>
+                        And enjoy!
+                    </p>
+                    <a href="modeling.html">
+                        <button class="project-button">Learn more</button>
+                    </a>
+                </div>
+                <!--Project4-->
+                <div class="project">
+                    <p></p>
+                    <p>Coming soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Section-Contact-->
+    <section class="sec-3">
+        <div class="sec-3-flex">
+                <h2>Contact</h2>
+                <p>
+                    E-mail: <br>
+                    zhen.qiao.2018@student.ism.de
+                </p>
+                <p>
+                    Mobile: <br>
+                    +49(0)1603431406 
+                </p>
+                <a class="sec-3-download" href="CV/Resume-EN.pdf">
+                    <img src="icon-skill/download.png">
+                     Resume
+                </a>
+        </div>
+    </section>
+
+<!--Java Script-->
+<script src="home.js"></script>
+
+</body>
+</html>
